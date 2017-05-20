@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">GRII</string>
+    <string name="abc">Start</string>
+    <string name="start_button">Start</string>
+    <string name="youtube_button">Learn with Video</string>
+    <string name="video_button">Video learning</string>
+    <string name="game_button">Game</string>
+    <string name="listen_button">Listen and Guess</string>
+    <string name="quiz_button">Quiz</string>
+    <string name="alphabet_textview">Alphabet</string>
+    <string name="number_textview">Number</string>
+    <string name="fruit_textview">Fruit</string>
+    <string name="titile_activity_start">Start Learning</string>
+
+    <string-array name="lesson_titles">
+        <item>"Alphabet"</item>
+        <item>"Number"</item>
+        <item>"Fruit"</item>
+        <item>"Car"</item>
+        <item>"Chapter One"</item>
+    </string-array>
+
+    <string-array name="lesson_details">
+        <item>"Item one details"</item>
+        <item>"Item two details"</item>
+        <item>"Item three details"</item>
+        <item>"Item four details"</item>
+        <item>"Item file details"</item>
+
+    </string-array>
+
+    <string-array name="answers">
+        <item>"A"</item>
+        <item>"B"</item>
+        <item>"C"</item>
+        <item>"D"</item>
+        <item>"E"</item>
+        <item>"F"</item>
+        <item>"G"</item>
+        <item>"H"</item>
+        <item>"I"</item>
+        <item>"J"</item>
+        <item>"K"</item>
+        <item>"L"</item>
+    </string-array>
+
+    <string-array name="opt1">
+        <item>"A"</item>
+        <item>"B"</item>
+        <item>"C"</item>
+        <item>"D"</item>
+        <item>"E"</item>
+        <item>"F"</item>
+        <item>"G"</item>
+        <item>"H"</item>
+        <item>"I"</item>
+        <item>"J"</item>
+        <item>"K"</item>
+        <item>"L"</item>
+    </string-array>
+
+    <string-array name="opt2">
+        <item>"B"</item>
+        <item>"C"</item>
+        <item>"D"</item>
+        <item>"E"</item>
+        <item>"F"</item>
+        <item>"G"</item>
+        <item>"H"</item>
+        <item>"I"</item>
+        <item>"J"</item>
+        <item>"K"</item>
+        <item>"L"</item>
+        <item>"A"</item>
+    </string-array>
+
+    <string-array name="opt3">
+        <item>"C"</item>
+        <item>"D"</item>
+        <item>"E"</item>
+        <item>"F"</item>
+        <item>"G"</item>
+        <item>"H"</item>
+        <item>"I"</item>
+        <item>"J"</item>
+        <item>"K"</item>
+        <item>"L"</item>
+        <item>"A"</item>
+        <item>"B"</item>
+    </string-array>
+
+</resources>
