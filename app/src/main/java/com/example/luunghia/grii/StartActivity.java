@@ -21,7 +21,7 @@ public class StartActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private GridLayoutManager gridLayoutManager;
     private RecyclerAdapter adapter;
-    private ArrayList<MyData> data_list;
+    private ArrayList<Lesson> data_list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,7 @@ public class StartActivity extends AppCompatActivity {
         gridLayoutManager = new GridLayoutManager(this,2);
         recyclerView.setLayoutManager(gridLayoutManager);
         recyclerView.setHasFixedSize(true);
-        adapter = new RecyclerAdapter(this,data_list);
+        adapter = new RecyclerAdapter(data_list,StartActivity.this);
         recyclerView.setAdapter(adapter);
 
     }
@@ -47,7 +47,7 @@ public class StartActivity extends AppCompatActivity {
 
                 OkHttpClient client = new OkHttpClient();
                 Request request = new Request.Builder()
-                        .url("http://10.0.2.2/test/test.php")
+                        .url("https://nghialt.000webhostapp.com/test.php")
                         .build();
                 try {
                     Response response = client.newCall(request).execute();
@@ -59,8 +59,8 @@ public class StartActivity extends AppCompatActivity {
 
                         JSONObject object = array.getJSONObject(i);
 
-                        MyData data = new MyData(object.getInt("id"),object.getString("image"),
-                                object.getString("title"));
+                        Lesson data = new Lesson(object.getString("image"),
+                                object.getString("title"),object.getInt("id"));
 
                         data_list.add(data);
                     }
