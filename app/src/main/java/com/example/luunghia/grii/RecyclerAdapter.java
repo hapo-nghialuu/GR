@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 
 public class RecyclerAdapter extends android.support.v7.widget.RecyclerView.Adapter<RecyclerAdapter.ViewHolder>{
@@ -43,6 +45,7 @@ public class RecyclerAdapter extends android.support.v7.widget.RecyclerView.Adap
             int postion = getAdapterPosition();
             Lesson lesson = this.lessons.get(postion);
             Intent intent = new Intent(this.ctx, DetailsLesson.class);
+            intent.putExtra("id", lesson.getLessonid());
             intent.putExtra("images", lesson.getImages());
             intent.putExtra("titles", lesson.getTitles());
             this.ctx.startActivity(intent);
@@ -61,7 +64,8 @@ public class RecyclerAdapter extends android.support.v7.widget.RecyclerView.Adap
     public void onBindViewHolder(ViewHolder holder, int position) {
         Lesson LES = lessons.get(position);
         holder.itemTitle.setText(LES.getTitles());
-        holder.itemImage.setImageResource(LES.getImages());
+        holder.itemDetail.setText(LES.getTitles());
+        Glide.with(ctx).load(LES.getImages()).into(holder.itemImage);
     }
 
     @Override

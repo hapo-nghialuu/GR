@@ -45,6 +45,9 @@ public class DetailsLesson extends AppCompatActivity {
         pre_btn = (Button)findViewById(R.id.learn_previous_btn);
         mImageView = (ImageView)findViewById(R.id.learn_image);
 
+        Intent intent = getIntent();
+        intent.getIntExtra("id",0);
+
         sounds_learn[position].start();
         mImageView.setImageResource(images_learn[position]);
 

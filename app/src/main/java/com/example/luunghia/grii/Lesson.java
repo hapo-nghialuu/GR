@@ -10,19 +10,31 @@ import java.util.ArrayList;
 
 public class Lesson {
 
-    public Lesson(int images, String titles){
-        this.setImages(images);
-        this.setTitles(titles);
-    }
 
-    private int images;
+    private String images;
     private String titles;
 
-    public int getImages() {
+    public int getLessonid() {
+        return lessonid;
+    }
+
+    public void setLessonid(int lessonid) {
+        this.lessonid = lessonid;
+    }
+
+    private int lessonid;
+
+    public Lesson(String images, String titles, int lessonid) {
+        this.images = images;
+        this.titles = titles;
+        this.lessonid = lessonid;
+    }
+
+    public String getImages() {
         return images;
     }
 
-    public void setImages(int images) {
+    public void setImages(String images) {
         this.images = images;
     }
 
